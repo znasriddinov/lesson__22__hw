@@ -1,0 +1,37 @@
+.coming {
+  display: flex;
+  align-items: center;
+  gap: 220px;
+  margin-top: 155px;
+
+  &__right {
+    width: 445px;
+
+    & h2 {
+      font-size: 48px;
+      color: $color;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -2.142857074737549px;
+    }
+
+    & p {
+      font-family: "Lexend Deca";
+      color: $primary-color;
+      margin-top: 24px;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0px;
+    }
+
+    & .main-btn {
+      @include main-btn;
+      margin-top: 40px;
+    }
+
+    & .main-btn:hover {
+      @include main-btn-hover;
+    }
+  }
+}

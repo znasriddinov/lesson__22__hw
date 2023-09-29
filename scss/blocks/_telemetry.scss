@@ -1,0 +1,37 @@
+.telemetry {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  gap: 220px;
+
+  &__left {
+    width: 445px;
+
+    & h2 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -2.142857074737549px;
+      color: $color;
+    }
+
+    & p {
+      font-family: "Lexend Deca";
+      color: $primary-color;
+      margin-top: 24px;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0px;
+    }
+
+    & .main-btn {
+      @include main-btn;
+      margin-top: 40px;
+    }
+
+    & .main-btn:hover {
+      @include main-btn-hover;
+    }
+  }
+}

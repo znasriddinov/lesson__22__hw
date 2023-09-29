@@ -1,0 +1,20 @@
+$color: #495567;
+$primary-color: #939caa;
+
+@mixin main-btn {
+  background-color: #fcb72b;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 14px 39px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+@mixin main-btn-hover {
+  background-color: #fff;
+  border-color: #fcb72b;
+  color: #fcb72b;
+}

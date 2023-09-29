@@ -1,0 +1,293 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-deca-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-mono-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Space Mono";
+}
+* a {
+  color: #939caa;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 165px;
+}
+
+.nav__tittle {
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__tittle .nav__right {
+  display: flex;
+  align-items: center;
+  gap: 58px;
+}
+.nav__tittle .nav__right ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav__tittle .main-btn {
+  background-color: #fcb72b;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 14px 39px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.nav__tittle .main-btn:hover {
+  background-color: #fff;
+  border-color: #fcb72b;
+  color: #fcb72b;
+}
+
+.sharing {
+  background-image: url("/imgs/header-absolute.png");
+  background-repeat: no-repeat;
+  background-size: 100% 650px;
+  height: 650px;
+}
+.sharing .sharing-left {
+  position: absolute;
+  top: 249px;
+  left: 165px;
+}
+.sharing .sharing-left h1 {
+  font-size: 56px;
+  width: 500px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+}
+.sharing .sharing-left p {
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  color: #fff;
+  width: 405px;
+  margin-left: 95px;
+  margin-top: 40px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.sharing .sharing-left .main-btn {
+  background-color: #fcb72b;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 14px 39px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-left: 95px;
+  margin-top: 40px;
+}
+.sharing .sharing-left .main-btn:hover {
+  background-color: #fff;
+  border-color: #fcb72b;
+  color: #fcb72b;
+}
+
+.column {
+  margin-top: 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.column h3 {
+  color: #495567;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.0714285374px;
+}
+.column p {
+  font-family: "Lexend Deca";
+  color: #939caa;
+  margin-top: 27px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.telemetry {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  gap: 220px;
+}
+.telemetry__left {
+  width: 445px;
+}
+.telemetry__left h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.1428570747px;
+  color: #495567;
+}
+.telemetry__left p {
+  font-family: "Lexend Deca";
+  color: #939caa;
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+.telemetry__left .main-btn {
+  background-color: #fcb72b;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 14px 39px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-top: 40px;
+}
+.telemetry__left .main-btn:hover {
+  background-color: #fff;
+  border-color: #fcb72b;
+  color: #fcb72b;
+}
+
+.coming {
+  display: flex;
+  align-items: center;
+  gap: 220px;
+  margin-top: 155px;
+}
+.coming__right {
+  width: 445px;
+}
+.coming__right h2 {
+  font-size: 48px;
+  color: #495567;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.1428570747px;
+}
+.coming__right p {
+  font-family: "Lexend Deca";
+  color: #939caa;
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+.coming__right .main-btn {
+  background-color: #fcb72b;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 14px 39px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-top: 40px;
+}
+.coming__right .main-btn:hover {
+  background-color: #fff;
+  border-color: #fcb72b;
+  color: #fcb72b;
+}
+
+footer .footer {
+  display: flex;
+  align-items: center;
+  gap: 336px;
+  background-color: #495567;
+  height: 300px;
+  padding: 102px 0;
+  margin-top: 329px;
+}
+footer .footer__left h2 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.1428570747px;
+  width: 415px;
+}
+footer .footer__right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+footer .footer__right-box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 9px 16px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #495567;
+}
+footer .footer__right-box h5 {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.4464285672px;
+}
+footer .footer__right-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.8928571343px;
+}
+footer .footer__bottom {
+  background-color: #333a44;
+  padding: 36px 0;
+}
+footer .footer__bottom .footer__tittle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer__bottom .footer__tittle .footer-left {
+  display: flex;
+  align-items: center;
+  gap: 58px;
+}
+footer .footer__bottom .footer__tittle .footer-left ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+footer .footer__bottom .footer__tittle .footer-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}/*# sourceMappingURL=styles.css.map */

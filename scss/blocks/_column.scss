@@ -1,0 +1,26 @@
+.column {
+  margin-top: 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+  & h3 {
+    color: $color;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.0714285373687744px;
+  }
+
+  & p {
+    font-family: "Lexend Deca";
+    color: $primary-color;
+    margin-top: 27px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
